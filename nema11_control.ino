@@ -28,7 +28,7 @@ void setup() {
   // Initialize Bluefruit
   Bluefruit.begin();
   Bluefruit.setTxPower(4);    // Max power for better range
-  Bluefruit.setName("StepperMotor");
+  Bluefruit.setName("Electrospinning 1");
   
   // Configure and start BLE UART service
   bleuart.begin();
