@@ -76,9 +76,11 @@ void moveDegrees(float degrees, bool clockwise = true) {
 
   for (int i = 0; i < stepsToMove; i++) {
     digitalWrite(stepPin, HIGH);
-    delayMicroseconds(500);
+    // delayMicroseconds(500);
+    delayMicroseconds(1500);
     digitalWrite(stepPin, LOW);
-    delayMicroseconds(500);
+    // delayMicroseconds(500);
+    delayMicroseconds(1500);
   }
   
   sendMessage("Move complete!");
